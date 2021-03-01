@@ -1,0 +1,10 @@
+[Unit]
+Description=coder-cloud-redirect
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/coder-cloud-redirect.py 80
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
