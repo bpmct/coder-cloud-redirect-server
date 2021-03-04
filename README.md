@@ -19,7 +19,7 @@ systemctl status code-server@coder
 journalctl -u code-server@coder
 
 # If journalctl isn't giving logs:
-sudo systemd restart systemd-journald 
+systemd restart systemd-journald 
 # or
 sed -i.bak 's/#Storage=auto/Storage=persistent/' /etc/systemd/journald.conf
 mkdir -p /var/log/journal
