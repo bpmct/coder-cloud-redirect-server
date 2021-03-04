@@ -26,7 +26,7 @@ class Redirect(BaseHTTPRequestHandler):
             urls = FindURL(result)
             url = urls[-1]
         except:
-            url = "https://github.com/bpmct/code-server-azure#troubleshooting"
+            url = "https://github.com/bpmct/coder-cloud-redirect-server/blob/master/README.md#troubleshooting"
         self.send_response(302)
         self.send_header('Location', url)
         self.end_headers()
