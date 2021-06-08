@@ -25,4 +25,6 @@ sed -i.bak 's/#Storage=auto/Storage=persistent/' /etc/systemd/journald.conf
 mkdir -p /var/log/journal
 systemctl force-reload systemd-journald
 systemctl restart systemd-journald
+# then, if needed:
+sudo reboot
 ```
