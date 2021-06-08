@@ -15,7 +15,7 @@ If you are being redirected to this screen, that means the redirect service is w
 # Check if code-server is running
 systemctl status code-server@coder
 
-# Check if journalctl is giving us logs
+# Check if journalctl is giving us logs, and if something failed
 journalctl -u code-server@coder
 
 # If journalctl isn't giving logs:
